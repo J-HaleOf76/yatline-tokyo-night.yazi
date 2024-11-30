@@ -61,7 +61,7 @@ ya pack -a wekauwau/yatline-tokyo-night
 > Add this to your `~/.config/yazi/init.lua` before Yatline's initialization.
 
 ```lua
-local tokyo_night_theme = require("yatline-tokyonight"):setup("night") -- or moon/storm/day
+local tokyo_night_theme = require("yatline-tokyo-night"):setup("night") -- or moon/storm/day
 ```
 
 Then use the `theme` variable in Yatline config's theme parameter.
