@@ -182,7 +182,15 @@ local function tokyo_night_theme(flavor)
 	local palette = palettes[flavor] or night_palette
 
 	return {
-		---#=== yatline ===#---
+		section_separator_open = "",
+		section_separator_close = "",
+
+		inverse_separator_open = "",
+		inverse_separator_close = "",
+
+		part_separator_open = "|",
+		part_separator_close = "|",
+
 		style_a = {
 			fg = palette.bg,
 			bg_mode = {
@@ -214,7 +222,7 @@ end
 
 return {
 	setup = function(_, args)
-		args = args or "dawn"
+		args = args or "night"
 
 		return tokyo_night_theme(args)
 	end,
